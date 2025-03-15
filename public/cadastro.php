@@ -1,6 +1,7 @@
 <?php
 include '../includes/conexao.php';
-
+ 
+// Verifica se o formulário foi enviado e se o email e a senha foram preenchidos
 if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])) {
     $email = addslashes($_POST['email']);
     $senha = md5(addslashes($_POST['senha'])); 
@@ -16,6 +17,7 @@ if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) 
         // Insere o usuário no banco
         $stmt = $pdo->prepare("INSERT INTO usuario (email, senha) VALUES (:email, :senha)");
         if ($stmt->execute(['email' => $email, 'senha' => $senha])) {
+            
             echo "Cadastro realizado com sucesso!";
         } else {
             echo "Erro ao cadastrar.";

@@ -11,7 +11,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.login{
+.login {
   width: 300px;
   padding: 20px;
   background-color: #fff;
@@ -27,4 +27,7 @@ input {
   width: 80%;
   display: flex;
   flex-direction: column;
+}
+button {
+  transition-duration: 0.4s;
 }

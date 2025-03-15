@@ -2,6 +2,7 @@
 include '../includes/conexao.php';
 session_start();
 
+// Verifica se o formulário foi enviado e se o email e a senha foram preenchidos
 if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])) {
     $email = addslashes($_POST['email']);
     $senha = md5(addslashes($_POST['senha'])); 
@@ -11,9 +12,10 @@ if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) 
     $stmt->execute(['email' => $email, 'senha' => $senha]);
     $usuario = $stmt->fetch();
 
+    // Se o usuário existir, cria uma sessão com o id do usuário
     if ($usuario) {
         $_SESSION['usuario_id'] = $usuario['id']; 
-        header("Location: painel.php"); // Redireciona para a página do painel ou área restrita
+        header("Location: home.php"); // Redireciona para a página home
     } else {
         echo "Email ou senha incorretos.";
     }
