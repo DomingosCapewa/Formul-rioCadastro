@@ -24,7 +24,7 @@ Siga os passos abaixo para instalar e configurar o projeto localmente:
    git clone https://github.com/DomingosCapewa/Formul-rioCadastro.git2. 
 2. Navegue até o diretório do projeto: cd Formul-rioCadastro
 
-##Contribuindo
+## Contribuindo
 
 Contribuições são bem-vindas! Siga os passos abaixo para contribuir com o projeto:
 
