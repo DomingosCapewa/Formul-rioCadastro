@@ -6,10 +6,7 @@ Este repositório contém um formulário de cadastro desenvolvido em PHP. O obje
 
 - [Visão Geral](#visão-geral)
 - [Instalação](#instalação)
-- [Uso](#uso)
 - [Contribuindo](#contribuindo)
-- [Licença](#licença)
-- [Contato](#contato)
 
 ## Visão Geral
 
