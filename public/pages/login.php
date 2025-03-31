@@ -26,7 +26,7 @@ if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
 </head>
 <body>
     <div class="container">
